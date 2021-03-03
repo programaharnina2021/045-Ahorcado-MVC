@@ -3,7 +3,7 @@
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="vista.AhorcadoUI" project="045 Ahorcado MVC" 
     file="/045 Ahorcado MVC/src/vista/AhorcadoUI.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="53" width="90" x="75" y="193"/>    
+    <position height="-1" width="-1" x="121" y="198"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="false"/>      
@@ -12,7 +12,7 @@
   </class>  
   <class id="2" language="java" name="control.ParaUI" project="045 Ahorcado MVC" 
     file="/045 Ahorcado MVC/src/control/ParaUI.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="53" width="87" x="244" y="174"/>    
+    <position height="-1" width="-1" x="251" y="203"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="false"/>      
@@ -21,16 +21,16 @@
   </class>  
   <class id="3" language="java" name="control.AhorcadoController" project="045 Ahorcado MVC" 
     file="/045 Ahorcado MVC/src/control/AhorcadoController.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="53" width="87" x="397" y="158"/>    
+    <position height="-1" width="-1" x="440" y="331"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="false"/>      
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="modelo.GestionPalabra" project="045 Ahorcado MVC" 
-    file="/045 Ahorcado MVC/src/modelo/GestionPalabra.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="53" width="111" x="545" y="147"/>    
+  <class id="4" language="java" name="modelo.GestionDatos" project="045 Ahorcado MVC" 
+    file="/045 Ahorcado MVC/src/modelo/GestionDatos.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="581" y="173"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="false"/>      
@@ -39,7 +39,7 @@
   </class>  
   <class id="5" language="java" name="modelo.Palabra" project="045 Ahorcado MVC" 
     file="/045 Ahorcado MVC/src/modelo/Palabra.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="53" width="87" x="745" y="115"/>    
+    <position height="-1" width="-1" x="764" y="179"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="false"/>      
@@ -55,38 +55,50 @@
       <operations public="false" package="false" protected="false" private="false" static="false"/>    
     </display>  
   </class>  
-  <association id="7">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="8" name="secreta"/>      
-      <multiplicity id="9" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="5" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="10">    
+  <dependency id="7">    
     <end type="SOURCE" refId="6"/>    
     <end type="TARGET" refId="2"/>  
   </dependency>  
-  <generalization id="11">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <association id="12">    
+  <association id="8">    
     <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="13" name="ahorcado"/>      
-      <multiplicity id="14" minimum="0" maximum="1"/>    
+      <attribute id="9" name="ahorcadoController">        
+        <position height="0" width="0" x="0" y="147"/>      
+      </attribute>      
+      <multiplicity id="10" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="147"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="15">    
+  <association id="11">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="12" name="secreta">        
+        <position height="0" width="0" x="-24" y="38"/>      
+      </attribute>      
+      <multiplicity id="13" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-24" y="38"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="14">    
     <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="16" name="gestionPalabra"/>      
-      <multiplicity id="17" minimum="0" maximum="1"/>    
+      <attribute id="15" name="gestionDatos">        
+        <position height="0" width="0" x="-19" y="0"/>      
+      </attribute>      
+      <multiplicity id="16" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-19" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  <generalization id="17">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="false" package="false" protected="false" private="false" static="false"/>    

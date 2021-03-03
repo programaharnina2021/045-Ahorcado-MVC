@@ -1,17 +1,17 @@
 package control;
 
-import modelo.GestionPalabra;
+import modelo.GestionDatos;
 
 public class AhorcadoController {
-	private GestionPalabra gestionPalabra;
+	private GestionDatos gestionDatos;
 
 	public AhorcadoController() {
 		super();
-		gestionPalabra=new GestionPalabra();
+		gestionDatos=new GestionDatos();
 	}
 
 	public void guardarSecreta(String text) {
-		gestionPalabra.crearSecreta(text);
+		gestionDatos.crearSecreta(text);
 		
 	}
 	
