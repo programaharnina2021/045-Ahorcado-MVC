@@ -50,4 +50,13 @@ public class Palabra {
 		return cadena.length;
 	}
 	
+	public boolean comprobarPalabraCompletada() {
+		if (buscaLetra(0, Utiles.incognita) != -1)
+			return false;
+		return true;
+	}
+
+	public char getLetra(int posicion) {
+		return cadena[posicion];
+	}
 }

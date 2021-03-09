@@ -7,12 +7,22 @@ public class AhorcadoController {
 
 	public AhorcadoController() {
 		super();
-		gestionDatos=new GestionDatos();
+		this.gestionDatos=new GestionDatos();
 	}
 
 	public void guardarSecreta(String text) {
-		gestionDatos.crearSecreta(text);
-		
+		this.gestionDatos.crearSecreta(text);
 	}
 	
+	public void buscaLetra(char letra) {
+		this.gestionDatos.comprobarLetraEnPalabra(letra);
+	}
+
+	public String getParcial() {
+		return this.gestionDatos.getParcial();
+	}
+
+	public String getFallos() {
+		return this.gestionDatos.getFallos();
+	}
 }

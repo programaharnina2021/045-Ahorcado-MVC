@@ -60,8 +60,6 @@ public class AhorcadoUI extends JFrame {
 		contentPane.add(lblLetra);
 		
 		txtLetra = new JTextField();
-		
-		txtLetra.setEditable(false);
 		txtLetra.setBounds(69, 81, 49, 20);
 		contentPane.add(txtLetra);
 		txtLetra.setColumns(1);
